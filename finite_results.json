@@ -1,0 +1,75 @@
+{
+  "scope": "Exact enumeration of a constructed deterministic hypothesis table. No Gemma results.",
+  "hypotheses": [
+    {
+      "h": 0,
+      "signature": 0,
+      "boundary": 0,
+      "correct_action": "A"
+    },
+    {
+      "h": 1,
+      "signature": 0,
+      "boundary": 0,
+      "correct_action": "A"
+    },
+    {
+      "h": 2,
+      "signature": 1,
+      "boundary": 0,
+      "correct_action": "A"
+    },
+    {
+      "h": 3,
+      "signature": 1,
+      "boundary": 1,
+      "correct_action": "B"
+    }
+  ],
+  "query_statistics": [
+    {
+      "query": "signature",
+      "information_gain_bits": 1.0,
+      "expected_residual_bayes_risk": 0.25,
+      "decision_gain": 0.0
+    },
+    {
+      "query": "boundary",
+      "information_gain_bits": 0.8112781244591329,
+      "expected_residual_bayes_risk": 0.0,
+      "decision_gain": 0.25
+    }
+  ],
+  "policies": [
+    {
+      "policy": "passive",
+      "correct": 3,
+      "cases": 4,
+      "mean_probe_count": 0.0
+    },
+    {
+      "policy": "entropy_one_probe",
+      "correct": 3,
+      "cases": 4,
+      "mean_probe_count": 1.0
+    },
+    {
+      "policy": "frontier_one_probe",
+      "correct": 4,
+      "cases": 4,
+      "mean_probe_count": 1.0
+    }
+  ],
+  "misspecification": {
+    "actual_out_of_class": "h4",
+    "probe_outcome": 0,
+    "predicted_action": "A",
+    "required_action": "B",
+    "conditional_consensus_was_wrong": true,
+    "after_failed_action_check": "empty hypothesis set; enter unresolved; no automatic recovery claimed"
+  },
+  "verification": {
+    "all_nonempty_subsets_checked": 15,
+    "assertions_passed": true
+  }
+}
